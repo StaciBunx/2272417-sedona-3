@@ -2,6 +2,7 @@
 
 * Студент: [Анастасия Банк](https://up.htmlacademy.ru/htmlcss-individual/3/user/2272417).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Мой проект Седона](https://stacibunx.github.io/2272417-sedona-3/)
 
 ---
 
