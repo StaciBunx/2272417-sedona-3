@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Седона. Каталог</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav class="nav">
+        <a class="logo" href="./index.html"><img src="#" alt="Логотип City of Sedona."></a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О седоне</a>
+          </li>
+          <li class="nav-item nav-item-active">
+            <a class="nav-link" href="./catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="nav-list nav-list-additional">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <span class="visually-hidden">Избранное</span>
+              <span class="additional-counter">12</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="main-title">Гостиницы Седоны</h1>
+      <header class="main-header">
+        <ul class="main-header-list">
+          <li class="main-header-item">
+            <a href="./index.html">
+              <span class="visually-hidden">Главная страница</span>
+            </a>
+          </li>
+          <li class="main-header-item">
+            <a>Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр для поиска гостиниц</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-fieldset">
+            <legend class="filter-title">Инфраструктура:</legend>
+            <label>
+              <input type="checkbox" name="pool" checked>
+              <span class="filter-text">Бассейн</span>
+            </label>
+            <label>
+              <input type="checkbox" name="parking" checked>
+              <span class="filter-text">Парковка</span>
+            </label>
+            <label>
+              <input type="checkbox" name="wi-fi">
+              <span class="filter-text">Wi-Fi</span>
+            </label>
+          </fieldset>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-title">Тип жилья:</legend>
+            <label class="filter-text">
+              <input type="radio" name="apartment-type" value="hotel" checked>
+              <span class="filter-text">Гостиница</span>
+            </label>
+            <label class="filter-text">
+              <input type="radio" name="apartment-type" value="motel">
+              <span class="filter-text">Мотель</span>
+            </label>
+            <label class="filter-text">
+              <input type="radio" name="apartment-type" value="apartments">
+              <span class="filter-text">Апартаменты</span>
+            </label>
+          </fieldset>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-title">Стоимость, ₽:</legend>
+            <label class="filter-text">
+              <span class="filter-text">от</span>
+              <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100">
+            </label>
+            <label class="filter-text">
+              <span class="filter-text">до</span>
+              <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000" step="100">
+            </label>
+            <button class="slider-thumb thumb-min" type="button">
+              <span class="visually-hidden">Ручка минимальной цены</span>
+            </button>
+            <button class="slider-thumb thumb-max" type="button">
+              <span class="visually-hidden">Ручка максимальной цены</span>
+            </button>
+          </fieldset>
+          <button class="filter-submit button" type="submit">Применить</button>
+          <button class="filter-reset button" type="reset">Сбросить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://vk.ru/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/s/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-developer" href="https://htmlacademy.ru/">
+        <img class="logo-HTML-Academy" src="#" alt="Логотип HTML Academy.">
+      </a>
+    </footer>
+  </body>
+
+</html>
