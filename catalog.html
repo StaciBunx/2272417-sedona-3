@@ -9,17 +9,19 @@
 
   <body>
     <header class="page-header">
+      <a class="logo" href="index.html">
+        <img src="#" alt="Логотип City of Sedona.">
+      </a>
       <nav class="nav">
-        <a class="logo" href="index.html"><img src="#" alt="Логотип City of Sedona."></a>
         <ul class="nav-list">
-          <li class="nav-item nav-item-active">
+          <li class="nav-item">
             <a class="nav-link" href="catalog.html">Главная</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">О седоне</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Гостиницы</a>
+            <a class="nav-link nav-link-current" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <ul class="nav-list nav-list-additional">
@@ -30,9 +32,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden">Отелей в избранном:</span>
+              <span class="additional-counter">12</span>
             </a>
-            <span class="additional-counter">12</span>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Хочу сюда!</a>
@@ -210,7 +212,7 @@
         </div>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-link-current" aria-current="page">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
