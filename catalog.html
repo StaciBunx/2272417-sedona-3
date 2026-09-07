@@ -10,16 +10,16 @@
   <body>
     <header class="page-header">
       <nav class="nav">
-        <a class="logo" href="./index.html"><img src="#" alt="Логотип City of Sedona."></a>
+        <a class="logo" href="index.html"><img src="#" alt="Логотип City of Sedona."></a>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Главная</a>
+          <li class="nav-item nav-item-active">
+            <a class="nav-link" href="catalog.html">Главная</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">О седоне</a>
           </li>
-          <li class="nav-item nav-item-active">
-            <a class="nav-link" href="catalog.html">Гостиницы</a>
+          <li class="nav-item">
+            <a class="nav-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="nav-list nav-list-additional">
@@ -29,13 +29,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span class="additional-counter">12</span>
             </a>
+            <span class="additional-counter">12</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Хочу сюда!</a>
+            <a class="nav-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -45,12 +45,12 @@
       <header class="main-header">
         <ul class="main-header-list">
           <li class="main-header-item">
-            <a href="index.html">
+            <a class="breadcrumbs" href="index.html">
               <span class="visually-hidden">Главная страница</span>
             </a>
           </li>
-          <li class="main-header-item">
-            <a>Гостиницы</a>
+          <li class="main-header-item breadcrumbs">
+            <p>Гостиницы</p>
           </li>
         </ul>
       </header>
@@ -112,24 +112,24 @@
         <h2 class="visually-hidden">Результаты поиска</h2>
         <p class="title">Найдено гостиниц: 38</p>
         <select class="catalog-select" aria-label="Сортировка">
-          <option value="popular">Сначала дешевые</option>
-          <option value="cheap">Сначала дорогие</option>
-          <option value="expensive">Сначала с высоким рейтингом</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="high-rating">Сначала с высоким рейтингом</option>
         </select>
 
         <ul class="catalog-view-list">
           <li class="catalog-view-item">
-            <a href="#" class="button button-dark">
+            <a href="catalog.html?view=card" class="button button-dark">
               <span class="visually-hidden">Показать карточки</span>
             </a>
           </li>
           <li class="catalog-view-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Показать слайды</span>
+            <a class="button" href="catalog.html?view=tile">
+              <span class="visually-hidden">Показать плитки</span>
             </a>
           </li>
           <li class="catalog-view-item">
-            <a class="button" href="#">
+            <a class="button" href="catalog.html?view=list">
               <span class="visually-hidden">Показать список</span>
             </a>
           </li>
@@ -140,8 +140,8 @@
               <h3 class="card-title">
                 Amara Resort & Spa
               </h3>
+              <img class="card-img" src="#" alt="Гостиница Amara Resort & Spa">
             </a>
-            <img class="card-img" src="#" alt="Гостиница Amara Resort & Spa">
             <p class="card-description">
               <span class="card-description-title">Гостиница</span>
               <b class="card-description-defenition">От 4000 ₽</b>
@@ -158,8 +158,8 @@
               <h3 class="card-title">
                 Villas at Poco Diablo
               </h3>
+              <img class="card-img" src="#" alt="Гостиница Villas at Poco Diablo">
             </a>
-            <img class="card-img" src="#" alt="Гостиница Villas at Poco Diablo">
             <p class="card-description">
               <span class="card-description-title">Гостиница</span>
               <b class="card-description-defenition">От 5000 ₽</b>
@@ -176,8 +176,8 @@
               <h3 class="card-title">
                 Desert Quail Inn
               </h3>
+              <img class="card-img" src="#" alt="Гостиница Desert Quail Inn">
             </a>
-            <img class="card-img" src="#" alt="Гостиница Desert Quail Inn">
             <p class="card-description">
               <span class="card-description-title">Гостиница</span>
               <b class="card-description-defenition">От 2500 ₽</b>
@@ -194,8 +194,8 @@
               <h3 class="card-title">
                 GreenTree Inn
               </h3>
+              <img class="card-img" src="#" alt="Гостиница GreenTree Inn">
             </a>
-            <img class="card-img" src="#" alt="Гостиница GreenTree Inn">
             <p class="card-description">
               <span class="card-description-title">Гостиница</span>
               <b class="card-description-defenition">От 1500 ₽</b>
@@ -210,7 +210,7 @@
         </div>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current" href="#">1</a>
+            <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -228,6 +228,18 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+      </section>
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p class="title">Подпишитесь на рассылку</p>
+        <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label>
+            <span class="visually-hidden">Ваш email:</span>
+            <input type="email" name="email" id="subscribe-email" placeholder="Ваш email" required>
+          </label>
+          <button class="button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
