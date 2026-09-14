@@ -110,9 +110,11 @@ body {
 }
 
 .hero {
-  background-color: #82b3d3;
+  color: #ffffff;
+  background-color: #bcd5e5;
   background-image: url("../images/index-hero-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -197,9 +199,10 @@ body {
 
 
 .subscribe {
+  color: #ffffff;
   background-color: #82b3d3;
   background-image: url("../images/index-subscribe-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -220,7 +223,7 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   background-image: url(../images/catalog-filter-background.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
