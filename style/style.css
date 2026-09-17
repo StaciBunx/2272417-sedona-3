@@ -111,7 +111,7 @@ body {
 
 .hero {
   color: #ffffff;
-  background-color: #bcd5e5;
+  background-color: #a9bfcc;
   background-image: url("../images/index-hero-background.jpg");
   background-size: cover;
   background-position: center;
@@ -197,10 +197,9 @@ body {
   cursor: pointer;
 }
 
-
 .subscribe {
   color: #ffffff;
-  background-color: #82b3d3;
+  background-color: #a9bfcc;
   background-image: url("../images/index-subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -221,8 +220,8 @@ body {
 
 .main-top-containter {
   color: #ffffff;
-  background-color: #82b3d3;
-  background-image: url(../images/catalog-filter-background.jpg);
+  background-color: #a9bfcc;
+  background-image: url("../images/catalog-filter-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -287,7 +286,7 @@ body {
   border-color: #000000;
 }
 
-.view-button.card {
+.view-button.cards {
   background-image: url("../images/icons/view-card.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -313,7 +312,6 @@ body {
 
 .card-link {
   text-decoration: none;
-
 }
 
 .card-title {
