@@ -34,7 +34,7 @@ body {
   background-color: #f2f2f2;
 }
 
-.page-containter {
+.page-container {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -329,6 +329,7 @@ body {
 /* Catalog page*/
 
 .main-top-containter {
+  padding: 35px 70px 70px;
   color: #ffffff;
   background-color: #a9bfcc;
   background-image: url("../images/catalog-filter-background.jpg");
@@ -336,7 +337,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 78px;
+}
+
 .main-header-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style-type: none;
 }
 
@@ -359,6 +369,10 @@ body {
 
 /* Filter */
 
+.filter-form {
+  display: flex;
+}
+
 .filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -367,6 +381,23 @@ body {
 
 .filter-form label {
   line-height: 23px;
+}
+
+.filter-fieldset {
+  width: 151px;
+  margin-right: 70px;
+}
+
+.filter-fieldset + .filter-range {
+  margin-left: 70px;
+}
+
+.filter-range {
+  width: 290px;
+}
+
+.filter-buttons {
+  width: 190px;
 }
 
 .filter-submit {
@@ -379,7 +410,20 @@ body {
 
 /* Catalog section */
 
+.catalog {
+  padding: 50px 70px 60px;
+  background-color: #ffffff;
+}
+
+.catalog-content {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-view-list {
+  display: flex;
   list-style-type: none;
 }
 
@@ -414,7 +458,14 @@ body {
   background-position: center;
 }
 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
+  width: 340px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   overflow: hidden;
@@ -477,6 +528,9 @@ body {
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style-type: none;
 }
 
