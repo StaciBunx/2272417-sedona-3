@@ -167,15 +167,9 @@ body {
   margin: 0 auto;
 }
 
-.advantages {
+.advantages,
+.service {
   background-color: #ffffff;
-}
-
-.advantages-content {
-  width: 660px;
-  height: 285px;
-  padding: 69px 0;
-  margin: 0 auto;
 }
 
 .advantages-title,
@@ -200,6 +194,12 @@ body {
   list-style: none;
 }
 
+.advantages-content {
+  width: 660px;
+  padding: 70px 0;
+  margin: 0 auto;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -207,16 +207,23 @@ body {
 
 .advantages-item-big {
   display: flex;
-  color: #ffffff;
   background-color: #82b3d3;
+}
+
+.advantages-item-big .advantages-title,
+.advantages-item-big .advantages-text {
+  color: #ffffff;
 }
 
 .advantages-item-wrapper {
   width: 400px;
+  padding: 0 85px;
 }
 
 .advantages-item {
   width: 400px;
+  height: 400px;
+  padding: 0 85px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -228,7 +235,20 @@ body {
   color: #ffffff;
 }
 
+.service-content {
+  width: 660px;
+  padding: 65px 0;
+  margin: 0 auto;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .service-item {
+  width: 400px;
+  height: 400px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -263,22 +283,40 @@ body {
   background-repeat: no-repeat;
 }
 
+.search {
+  padding: 96px 0;
+  background-color: #ffffff;
+}
+
+.search-content {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .search-button {
+
   font-size: 20px;
   line-height: 36px;
   cursor: pointer;
 }
 
 .subscribe {
-  color: #ffffff;
+  padding: 95px 0 105px;
   background-color: #a9bfcc;
   background-image: url("../images/index-subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.subscribe > .title,
-.subscribe > .text {
+.subscribe-content {
+  width: 685px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscribe .title,
+.subscribe .text {
   color: #ffffff;
 }
 
@@ -468,6 +506,13 @@ body {
 
 /* Footer */
 
+.page-footer {
+  display: flex;
+  padding: 40px 70px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .phone {
   font-weight: 400;
   font-size: 40px;
@@ -478,7 +523,15 @@ body {
 }
 
 .social-list {
+  display: flex;
+  margin: 0;
   list-style-type: none;
+}
+
+.social-link {
+  display: block;
+  width: 47px;
+  height: 40px;
 }
 
 .vkontakte::before {
