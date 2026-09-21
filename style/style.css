@@ -20,6 +20,12 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -150,7 +156,7 @@ body {
 }
 
 .nav-button {
-  width: 160px;
+  min-width: 160px;
 }
 
 /* Sections */
@@ -330,7 +336,7 @@ body {
 }
 
 .search-button {
-  width: 376px;
+  min-width: 376px;
   font-size: 20px;
   line-height: 36px;
   cursor: pointer;
@@ -361,7 +367,7 @@ body {
 }
 
 .subscribe-button {
-  width: 232px;
+  min-width: 232px;
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -416,7 +422,15 @@ body {
 
 .filter-form {
   display: flex;
+  justify-content: space-between;
 }
+
+.filter-left-column,
+.filter-right-column {
+  display: flex;
+  gap: 70px;
+}
+
 
 .filter-title {
   font-weight: 700;
@@ -433,27 +447,20 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  width: 150px;
-  margin-right: 70px;
-}
-
-.filter-fieldset + .filter-range {
-  margin-left: 70px;
+  min-width: 150px;
 }
 
 .filter-range {
   width: 290px;
 }
 
-.filter-buttons {
-  width: 190px;
-}
-
 .filter-submit {
+  min-width: 190px;
   background-color: #82b3d3;
 }
 
 .filter-reset {
+  min-width: 190px;
   background-color: transparent;
 }
 
