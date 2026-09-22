@@ -30,6 +30,11 @@ body {
   background-color: #f2f2f2;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -537,6 +542,9 @@ body {
 }
 
 .card-img {
+  width: 300px;
+  height: 212px;
+  object-fit: cover;
   order: -1;
 }
 
