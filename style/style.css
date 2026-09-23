@@ -410,20 +410,18 @@ img {
 
 .main-title {
   margin: 0;
+  margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
 }
 
 .main-header-list {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   display: flex;
   align-items: center;
   list-style-type: none;
-}
-
-.catalog > .title {
-  text-align: left;
 }
 
 .breadcrumbs {
@@ -496,7 +494,14 @@ img {
 }
 
 .catalog-title {
+  margin: 0;
   margin-right: 200px;
+}
+
+.catalog-select {
+  width: 292px;
+  height: 50px;
+  border: 2px solid #e5e5e5;
 }
 
 .catalog-view-list {
@@ -542,6 +547,7 @@ img {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
   gap: 20px;
 }
 
@@ -642,9 +648,10 @@ img {
 }
 
 .pagination-list {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
+  padding-top: 40px;
   gap: 8px;
   list-style-type: none;
 }
