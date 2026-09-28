@@ -384,13 +384,20 @@ img {
 }
 
 .subscribe-form {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  width: 684px;
+  grid-template-columns: auto min-content;
   margin-top: 55px;
+}
+
+.subscribe-form input {
+  width: 100%;
+  height: 100%;
 }
 
 .subscribe-button {
   min-width: 232px;
+  min-height: 52px;
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -493,6 +500,7 @@ img {
 }
 
 .catalog-title {
+  max-width: 400px;
   margin: 0;
   margin-right: 200px;
   text-align: left;
@@ -554,6 +562,10 @@ img {
 }
 
 .card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
   padding: 20px;
   width: 340px;
   border: 1px solid #e6e6e6;
@@ -561,12 +573,14 @@ img {
 }
 
 .card-link {
+  grid-column: 1/-1;
   display: flex;
   flex-direction: column;
   text-decoration: none;
 }
 
 .card-title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -576,45 +590,35 @@ img {
 .card-img {
   width: 100%;
   height: 212px;
+  margin-bottom: 16px;
   object-fit: cover;
   order: -1;
 }
 
-.card-description {
-  display: flex;
-  justify-content: space-between;
+.card-description-title {
+  margin: 0;
 }
 
-.card-description-pric {
+.card-description-price {
+  margin: 0;
   text-align: right;
-}
-
-.card-buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-button {
-  width: 140px;
 }
 
 .button-fav-add {
   background-color: #82b3d3;
+  cursor: pointer;
 }
 
 .button-faved {
   background-color: #7db54f;
 }
 
-.card-rating {
-  display: flex;
-  justify-content: space-between;
-}
-
 .card-star {
   display: block;
+  margin: 0;
   width: 24px;
   height: 18px;
+  align-self: center;
   background-image: url("../images/icons/star.svg");
   background-repeat: repeat-x;
   background-position: 0 center;
@@ -638,9 +642,10 @@ img {
 }
 
 .card-rate {
+  margin: 0;
   width: 140px;
-  height: 37px;
-  padding: 8px 0;
+  /* height: 37px; */
+  padding: 8px 8px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -663,7 +668,8 @@ img {
   justify-content: center;
   align-items: center;
   min-width: 60px;
-  height: 60px;
+  min-height: 60px;
+  padding: 10px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
