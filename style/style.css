@@ -449,35 +449,62 @@ img {
 /* Filter */
 
 .filter-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content min-content auto min-content;
 }
 
 .filter-fieldset {
   margin: 0;
   margin-right: 70px;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   min-width: 150px;
+  min-height: 157px;
+  border: none;
 }
 
 .filter-range {
-  width: 290px;
+  max-width: 290px;
   margin-left: 70px;
 }
 
+.range-inputs {
+  display: grid;
+  grid-template-columns: 143px 143px;
+  grid-template-rows: 48px 20px;
+  row-gap: 36px;
+}
+
+.range-inputs input {
+  height: 100%;
+}
+
+.range-thumb {
+  height: 100%;
+}
+
 .filter-title {
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.filter-label + .filter-label {
+  margin-top: 16px;
 }
 
 .filter-form label {
   line-height: 23px;
 }
 
+.filter-buttons {
+  padding-top: 56px;
+}
+
 .filter-submit {
   min-width: 190px;
+  margin-bottom: 32px;
   background-color: #82b3d3;
 }
 

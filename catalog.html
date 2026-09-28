@@ -64,50 +64,53 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-fieldset">
                 <legend class="filter-title">Инфраструктура:</legend>
-                <label>
+                <label class="filter-label">
                   <input type="checkbox" name="pool" checked>
                   <span class="filter-text">Бассейн</span>
                 </label>
-                <label>
+                <label class="filter-label">
                   <input type="checkbox" name="parking" checked>
                   <span class="filter-text">Парковка</span>
                 </label>
-                <label>
+                <label class="filter-label">
                   <input type="checkbox" name="wi-fi">
                   <span class="filter-text">Wi-Fi</span>
                 </label>
               </fieldset>
               <fieldset class="filter-fieldset">
                 <legend class="filter-title">Тип жилья:</legend>
-                <label class="filter-text">
+                <label class="filter-label">
                   <input type="radio" name="apartment-type" value="hotel" checked>
                   <span class="filter-text">Гостиница</span>
                 </label>
-                <label class="filter-text">
+                <label class="filter-label">
                   <input type="radio" name="apartment-type" value="motel">
                   <span class="filter-text">Мотель</span>
                 </label>
-                <label class="filter-text">
+                <label class="filter-label">
                   <input type="radio" name="apartment-type" value="apartments">
                   <span class="filter-text">Апартаменты</span>
                 </label>
               </fieldset>
               <fieldset class="filter-fieldset filter-range">
                 <legend class="filter-title">Стоимость, ₽:</legend>
-                <label class="filter-text">
-                  <span class="filter-text">от</span>
-                  <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100">
-                </label>
-                <label class="filter-text">
-                  <span class="filter-text">до</span>
-                  <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000" step="100">
-                </label>
-                <button class="slider-thumb thumb-min" type="button">
-                  <span class="visually-hidden">Ручка минимальной цены</span>
-                </button>
-                <button class="slider-thumb thumb-max" type="button">
-                  <span class="visually-hidden">Ручка максимальной цены</span>
-                </button>
+                <div class="range-inputs">
+                  <label>
+                    <span class="filter-text">от</span>
+                    <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100">
+                  </label>
+                  <label>
+                    <span class="filter-text">до</span>
+                    <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000"
+                      step="100">
+                  </label>
+                  <button class="range-thumb range-thumb-min" type="button">
+                    <span class="visually-hidden">Ручка минимальной цены</span>
+                  </button>
+                  <button class="range-thumb range-thumb-max" type="button">
+                    <span class="visually-hidden">Ручка максимальной цены</span>
+                  </button>
+                </div>
               </fieldset>
               <div class="filter-buttons">
                 <button class="filter-submit button" type="submit">Применить</button>
