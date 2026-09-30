@@ -454,10 +454,11 @@ img {
 }
 
 .filter-fieldset {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-right: 70px;
   padding: 0;
-  display: grid;
   min-width: 150px;
   min-height: 157px;
   border: none;
@@ -591,6 +592,7 @@ img {
 .card {
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: min-content 21px auto min-content;
   column-gap: 20px;
   row-gap: 16px;
   padding: 20px;
@@ -631,6 +633,10 @@ img {
   text-align: right;
 }
 
+.card-button {
+  align-self: end;
+}
+
 .button-fav-add {
   background-color: #82b3d3;
   cursor: pointer;
@@ -641,11 +647,11 @@ img {
 }
 
 .card-star {
-  display: block;
+  align-self: end;
   margin: 0;
-  width: 24px;
-  height: 18px;
-  align-self: center;
+  padding: 10px 0;
+  width: 140px;
+  height: 37px;
   background-image: url("../images/icons/star.svg");
   background-repeat: repeat-x;
   background-position: 0 center;
@@ -669,9 +675,9 @@ img {
 }
 
 .card-rate {
+  align-self: end;
   margin: 0;
   width: 140px;
-  /* height: 37px; */
   padding: 8px 8px;
   font-size: 16px;
   line-height: 20px;
