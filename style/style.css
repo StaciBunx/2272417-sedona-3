@@ -592,7 +592,7 @@ img {
 .card {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: min-content 21px auto min-content;
+  grid-template-rows: 1fr;
   column-gap: 20px;
   row-gap: 16px;
   padding: 20px;
@@ -633,10 +633,6 @@ img {
   text-align: right;
 }
 
-.card-button {
-  align-self: end;
-}
-
 .button-fav-add {
   background-color: #82b3d3;
   cursor: pointer;
@@ -647,7 +643,6 @@ img {
 }
 
 .card-star {
-  align-self: end;
   margin: 0;
   padding: 10px 0;
   width: 140px;
@@ -675,7 +670,6 @@ img {
 }
 
 .card-rate {
-  align-self: end;
   margin: 0;
   width: 140px;
   padding: 8px 8px;
