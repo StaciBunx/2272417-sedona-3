@@ -218,13 +218,26 @@ img {
 
 .advantages-title {
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+}
+
+.advantages-title::after {
+  content: "";
+  display: block;
+  margin: 30px auto 0;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item-big .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-text {
@@ -430,6 +443,25 @@ img {
   list-style-type: none;
 }
 
+.main-header-item {
+  position: relative;
+  padding-right: 18px;
+  margin-right: 10px;
+}
+
+.main-header-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../images/icons/breadcrumb-arrow.svg");
+  background-repeat: no-repeat;
+}
+
 .breadcrumbs {
   margin: 0;
   padding: 0;
@@ -441,7 +473,6 @@ img {
   display: block;
   width: 13px;
   height: 15px;
-  margin-right: 28px;
   background-image: url("../images/icons/breadcrumb-home.svg");
   background-repeat: no-repeat;
 }
@@ -735,27 +766,20 @@ img {
 }
 
 .social-link {
+  position: relative;
+
   display: block;
   min-width: 47px;
   min-height: 40px;
 }
 
-.vkontakte {
-  background-image: url("../images/logo-vkontakte.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.telegram {
-  background-image: url("../images/logo-telegram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.youtube {
-  background-image: url("../images/logo-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .phone {
