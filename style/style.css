@@ -62,16 +62,71 @@ img {
 .button {
   display: block;
   padding: 8px 8px;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #756157;
   text-align: center;
   text-decoration: none;
   border: none;
   text-transform: uppercase;
   border-radius: 4px;
+}
+
+.button-basic {
+  background-color: #756157;
+}
+
+.button-basic:hover {
+  background-color: #615048;
+}
+
+.button-basic:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+
+.button-basic:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-second {
+  background-color: #82b3d3;
+}
+
+.button-second:hover {
+  background-color: #68a2ca;
+}
+
+.button-second:focus-visible {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.button-second:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-select {
+  background-color: #7db54f;
+}
+
+.button-select:hover {
+  background-color: #6c9e42;
+}
+
+.button-select:focus-visible {
+  background-color: #6c9e42;
+  outline: none;
+}
+
+.button-select:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
 }
 
 /* Header */
@@ -411,7 +466,6 @@ img {
 .subscribe-button {
   min-width: 232px;
   min-height: 52px;
-  background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
@@ -537,12 +591,30 @@ img {
 .filter-submit {
   min-width: 190px;
   margin-bottom: 32px;
-  background-color: #82b3d3;
+  cursor: pointer;
 }
 
 .filter-reset {
   min-width: 190px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.filter-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-reset:focus-visible {
+  outline: 3px solid #83b3d3;
+
+}
+
+.filter-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-reset:disabled {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 /* Catalog section */
@@ -664,13 +736,8 @@ img {
   text-align: right;
 }
 
-.button-fav-add {
-  background-color: #82b3d3;
+.card-button {
   cursor: pointer;
-}
-
-.button-faved {
-  background-color: #7db54f;
 }
 
 .card-star {
@@ -746,6 +813,22 @@ img {
 .pagination-link-separator {
   color: #000000;
   background-color: transparent;
+}
+
+/* Subscribe */
+
+.subscribe-catalog {
+  color: ;
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.subscribe-catalog .title {
+  color: #000000;
+}
+
+.subscribe-catalog .text {
+  color: #333333;
 }
 
 /* Footer */
