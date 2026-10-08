@@ -170,27 +170,41 @@ img {
   text-decoration: none;
 }
 
+.nav-link-current {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-underline-offset: 18px;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
+}
+
+.nav-link:not(.nav-link-current):hover {
+  color: #756157;
+}
+
+.nav-link:not(.nav-link-current):focus-visible {
+  color: #756157;
+  outline: none;
+}
+
+.nav-link:not(.nav-link-current):active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .nav-list-additional {
   margin-left: auto;
 }
 
 .nav-list-additional .nav-link {
   display: flex;
-  min-width: 42px;
+  min-width: 44px;
   min-height: 65px;
-}
-
-.nav-link-search {
-  background-image: url("../images/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .nav-link-fav {
   position: relative;
-  background-image: url("../images/icons/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .fav-counter {
@@ -200,8 +214,8 @@ img {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 15px;
-  right: 0;
+  top: 11px;
+  right: 3px;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -521,14 +535,21 @@ img {
   padding: 0;
   font-size: 16px;
   line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.breadcrumbs-home {
-  display: block;
-  width: 13px;
-  height: 15px;
-  background-image: url("../images/icons/breadcrumb-home.svg");
-  background-repeat: no-repeat;
+.breadcrumbs:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs:focus-visible {
+  color: #ffffff;
+  outline: none;
+}
+
+.breadcrumbs:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Filter */
@@ -663,7 +684,20 @@ img {
   background-repeat: no-repeat;
 }
 
-.view-button-dark {
+.view-button-current {
+  border-color: #000000;
+}
+
+.view-button:hover {
+  border-color: #000000;
+}
+
+.view-button:focus-visible {
+  outline: none;
+  border-color: #68a2ca;
+}
+
+.view-button:active {
   border-color: #000000;
 }
 
@@ -688,8 +722,10 @@ img {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   gap: 20px;
+  border-bottom: 1px solid #e6e6e6;
+
 }
 
 .card {
@@ -709,6 +745,23 @@ img {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+}
+
+.card-link:hover .card-title {
+  color: #756157;
+}
+
+.card-link:focus-visible {
+  outline: none;
+}
+
+.card-link:focus-visible .card-title {
+  color: #756157;
+  outline: none;
+}
+
+.card-link:active .card-title {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .card-title {
@@ -815,6 +868,24 @@ img {
   background-color: transparent;
 }
 
+.pagination-link:not(.pagination-link-current):not(.pagination-link-separator):hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:not(.pagination-link-current):not(.pagination-link-separator):focus-visible {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.pagination-link:not(.pagination-link-current):not(.pagination-link-separator):active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-link-current:focus-visible,
+.pagination-link-separator:focus-visible {
+  outline: none;
+}
+
 /* Subscribe */
 
 .subscribe-catalog {
@@ -850,7 +921,6 @@ img {
 
 .social-link {
   position: relative;
-
   display: block;
   min-width: 47px;
   min-height: 40px;
@@ -863,6 +933,20 @@ img {
   bottom: 0;
   left: 0;
   margin: auto;
+  color: #83b3d3;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus-visible .social-icon {
+  color: #68a2ca;
+}
+
+.social-link:focus-visible {
+  outline: none;
+}
+
+.social-link:active .social-icon {
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .phone {
@@ -873,4 +957,34 @@ img {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.phone:hover {
+  color: #756157;
+}
+
+.phone:focus-visible {
+  color: #756157;
+  outline: none;
+}
+
+.phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.developer-icon {
+  color: #000000;
+}
+
+.footer-developer:hover .developer-icon,
+.footer-developer:focus-visible .developer-icon {
+  color: #756157;
+}
+
+.footer-developer:focus-visible {
+  outline: none;
+}
+
+.footer-developer:active .developer-icon {
+  color: rgba(117, 97, 87, 0.3);
 }
