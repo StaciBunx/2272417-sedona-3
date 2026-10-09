@@ -127,6 +127,7 @@ img {
 
 .button:disabled {
   background-color: #e5e5e5;
+  cursor: not-allowed;
 }
 
 /* Header */
@@ -539,8 +540,18 @@ img {
   text-decoration: none;
 }
 
+.breadcrumbs-home {
+  display: block;
+  width: 13px;
+  height: 15px;
+  margin-right: 5px;
+  background-image: url("../images/icons/breadcrumb-home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .breadcrumbs:hover {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
 }
 
 .breadcrumbs:focus-visible {
@@ -549,7 +560,7 @@ img {
 }
 
 .breadcrumbs:active {
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
 }
 
 /* Filter */
@@ -636,6 +647,7 @@ img {
 
 .filter-reset:disabled {
   color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
 }
 
 /* Catalog section */
@@ -889,7 +901,6 @@ img {
 /* Subscribe */
 
 .subscribe-catalog {
-  color: ;
   background-image: none;
   background-color: #ffffff;
 }
