@@ -57,6 +57,7 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
 }
 
 .button {
@@ -84,7 +85,6 @@ img {
 
 .button-basic:focus-visible {
   background-color: #615048;
-  outline: none;
 }
 
 .button-basic:active {
@@ -101,7 +101,6 @@ img {
 
 .button-second:focus-visible {
   background-color: #68a2ca;
-  outline: none;
 }
 
 .button-second:active {
@@ -118,7 +117,6 @@ img {
 
 .button-select:focus-visible {
   background-color: #6c9e42;
-  outline: none;
 }
 
 .button-select:active {
@@ -148,6 +146,15 @@ img {
   z-index: 1;
   margin-right: 30px;
   margin-bottom: -10px;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-logo:hover {
+  transform: scale(1.1) translateY(3px);
+}
+
+.nav-logo:active {
+  transform: scale(1.2) translateY(4px);
 }
 
 .nav-list {
@@ -185,7 +192,6 @@ img {
 
 .nav-link:not(.nav-link-current):focus-visible {
   color: #756157;
-  outline: none;
 }
 
 .nav-link:not(.nav-link-current):active {
@@ -542,11 +548,15 @@ img {
 
 .breadcrumbs-home {
   display: block;
+  box-sizing: content-box;
   width: 13px;
   height: 15px;
-  margin-right: 5px;
+  padding: 8px;
+  margin: -8px;
+  margin-right: -3px;
   background-image: url("../images/icons/breadcrumb-home.svg");
   background-repeat: no-repeat;
+  background-origin: content-box;
   background-position: center;
 }
 
@@ -556,7 +566,7 @@ img {
 
 .breadcrumbs:focus-visible {
   color: #ffffff;
-  outline: none;
+  opacity: 1;
 }
 
 .breadcrumbs:active {
@@ -636,11 +646,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.filter-reset:focus-visible {
-  outline: 3px solid #83b3d3;
-
-}
-
 .filter-reset:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -704,11 +709,6 @@ img {
   border-color: #000000;
 }
 
-.view-button:focus-visible {
-  outline: none;
-  border-color: #68a2ca;
-}
-
 .view-button:active {
   border-color: #000000;
 }
@@ -763,13 +763,8 @@ img {
   color: #756157;
 }
 
-.card-link:focus-visible {
-  outline: none;
-}
-
 .card-link:focus-visible .card-title {
   color: #756157;
-  outline: none;
 }
 
 .card-link:active .card-title {
@@ -886,16 +881,10 @@ img {
 
 .pagination-link:not(.pagination-link-current):not(.pagination-link-separator):focus-visible {
   background-color: #68a2ca;
-  outline: none;
 }
 
 .pagination-link:not(.pagination-link-current):not(.pagination-link-separator):active {
   color: rgba(255, 255, 255, 0.3);
-}
-
-.pagination-link-current:focus-visible,
-.pagination-link-separator:focus-visible {
-  outline: none;
 }
 
 /* Subscribe */
@@ -952,10 +941,6 @@ img {
   color: #68a2ca;
 }
 
-.social-link:focus-visible {
-  outline: none;
-}
-
 .social-link:active .social-icon {
   color: rgba(104, 162, 202, 0.3);
 }
@@ -976,7 +961,6 @@ img {
 
 .phone:focus-visible {
   color: #756157;
-  outline: none;
 }
 
 .phone:active {
@@ -990,10 +974,6 @@ img {
 .footer-developer:hover .developer-icon,
 .footer-developer:focus-visible .developer-icon {
   color: #756157;
-}
-
-.footer-developer:focus-visible {
-  outline: none;
 }
 
 .footer-developer:active .developer-icon {
