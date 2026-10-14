@@ -78,51 +78,61 @@
               <fieldset class="filter-fieldset">
                 <legend class="filter-title">Инфраструктура:</legend>
                 <label class="filter-label">
-                  <input type="checkbox" name="pool" checked>
+                  <input class="visually-hidden filter-input" type="checkbox" name="pool" checked>
+                  <span class="filter-mark"></span>
                   <span class="filter-text">Бассейн</span>
                 </label>
                 <label class="filter-label">
-                  <input type="checkbox" name="parking" checked>
+                  <input class="visually-hidden filter-input" type="checkbox" name="parking" checked>
+                  <span class="filter-mark"></span>
                   <span class="filter-text">Парковка</span>
                 </label>
                 <label class="filter-label">
-                  <input type="checkbox" name="wi-fi">
+                  <input class="visually-hidden filter-input" type="checkbox" name="wi-fi">
+                  <span class="filter-mark"></span>
                   <span class="filter-text">Wi-Fi</span>
                 </label>
               </fieldset>
               <fieldset class="filter-fieldset">
                 <legend class="filter-title">Тип жилья:</legend>
                 <label class="filter-label">
-                  <input type="radio" name="apartment-type" value="hotel" checked>
+                  <input class="visually-hidden filter-input" type="radio" name="apartment-type" value="hotel" checked>
+                  <span class="filter-mark"></span>
                   <span class="filter-text">Гостиница</span>
                 </label>
                 <label class="filter-label">
-                  <input type="radio" name="apartment-type" value="motel">
+                  <input class="visually-hidden filter-input" type="radio" name="apartment-type" value="motel">
+                  <span class="filter-mark"></span>
                   <span class="filter-text">Мотель</span>
                 </label>
                 <label class="filter-label">
-                  <input type="radio" name="apartment-type" value="apartments">
+                  <input class="visually-hidden filter-input" type="radio" name="apartment-type" value="apartments">
+                  <span class="filter-mark"></span>
                   <span class="filter-text">Апартаменты</span>
                 </label>
               </fieldset>
               <fieldset class="filter-fieldset filter-range">
                 <legend class="filter-title">Стоимость, ₽:</legend>
                 <div class="range-inputs">
-                  <label>
+                  <label class="range-label">
                     <span class="filter-text">от</span>
                     <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100">
                   </label>
-                  <label>
+                  <label class="range-label">
                     <span class="filter-text">до</span>
                     <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000"
                       step="100">
                   </label>
-                  <button class="range-thumb range-thumb-min" type="button">
-                    <span class="visually-hidden">Ручка минимальной цены</span>
-                  </button>
-                  <button class="range-thumb range-thumb-max" type="button">
-                    <span class="visually-hidden">Ручка максимальной цены</span>
-                  </button>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left:0; width:226px;">
+                    <button class=" range-thumb range-thumb-min" type="button">
+                      <span class="visually-hidden">Ручка минимальной цены</span>
+                    </button>
+                    <button class="range-thumb range-thumb-max" type="button">
+                      <span class="visually-hidden">Ручка максимальной цены</span>
+                    </button>
+                  </div>
                 </div>
               </fieldset>
               <div class="filter-buttons">
@@ -141,7 +151,7 @@
             <select class="catalog-select" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
-              <option value="high-rating">Сначала с высоким рейтингом</option>
+              <option value="popular">Сначала популярные</option>
             </select>
             <ul class="catalog-view-list">
               <li class="catalog-view-item">
@@ -260,7 +270,8 @@
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label>
                 <span class="visually-hidden">Введите данные:</span>
-                <input type="email" name="email" id="subscribe-email" placeholder="Ваш email" required>
+                <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Ваш email"
+                  required>
               </label>
               <button class="button button-second subscribe-button" type="submit">Подписаться</button>
             </form>
