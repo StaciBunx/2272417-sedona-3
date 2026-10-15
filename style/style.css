@@ -669,6 +669,11 @@ img {
   background-position: center;
 }
 
+.filter-input:focus-visible + .filter-mark {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
 /* Range-scale in Filter section */
 
 .filter-range {
