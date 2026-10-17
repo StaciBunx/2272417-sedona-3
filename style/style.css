@@ -637,15 +637,21 @@ img {
   cursor: not-allowed;
 }
 
-.filter-mark {
+.filter-input {
+  appearance: none;
   width: 20px;
   height: 20px;
+  margin: 0;
   margin-right: 16px;
-  background-color: #ffffff;
+  background: #ffffff;
   border-radius: 4px;
 }
 
-.filter-input[type="checkbox"]:checked + .filter-mark::before {
+.filter-input[type="radio"] {
+  border-radius: 50%;
+}
+
+.filter-input[type="checkbox"]:checked::before {
   content: "";
   display: block;
   width: 20px;
@@ -655,11 +661,7 @@ img {
   background-position: center;
 }
 
-.filter-input[type="radio"] + .filter-mark {
-  border-radius: 50%;
-}
-
-.filter-input[type="radio"]:checked + .filter-mark::before {
+.filter-input[type="radio"]:checked:before {
   content: "";
   display: block;
   width: 20px;
@@ -669,7 +671,7 @@ img {
   background-position: center;
 }
 
-.filter-input:focus-visible + .filter-mark {
+.filter-input:focus-visible {
   outline: 2px solid #000000;
   outline-offset: 2px;
 }
