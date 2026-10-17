@@ -511,7 +511,6 @@ img {
   opacity: 0.1;
 }
 
-
 .subscribe-button {
   min-width: 232px;
   min-height: 52px;
@@ -779,6 +778,11 @@ img {
 .range-thumb:active {
   border: 3px solid #83b3d3;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-thumb:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
 }
 
 .range-thumb-min {
