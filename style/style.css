@@ -250,7 +250,6 @@ img {
 }
 
 .hero {
-  /* display: flex; */
   height: 485px;
   padding: 51px;
   color: #ffffff;
@@ -725,13 +724,11 @@ img {
   font-weight: 700;
   font-size: 18px;
   border: none;
-  -moz-appearance: textfield;
   appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1338,13 +1335,11 @@ img {
   padding: 10px 2px;
   text-align: center;
   border-radius: 0;
-  -moz-appearance: textfield;
   appearance: textfield;
 }
 
 .modal-quantity-input::-webkit-outer-spin-button,
 .modal-quantity-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
