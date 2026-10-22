@@ -158,7 +158,7 @@ img {
   position: relative;
   display: block;
   max-width: 150px;
-  padding: 20px 16px;
+  padding: 20px 16px 21px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -170,7 +170,7 @@ img {
 .nav-link-current::after {
   position: absolute;
   left: 50%;
-  bottom: -1px;
+  bottom: 0;
   width: calc(100% - 32px);
   height: 2px;
   transform: translateX(-50%);
@@ -250,8 +250,8 @@ img {
 }
 
 .hero {
-  height: 485px;
-  padding: 51px;
+  height: 484px;
+  padding: 50px;
   color: #ffffff;
   background-color: #a9bfcc;
   background-image: url("../images/index-hero-background.jpg");
@@ -273,7 +273,7 @@ img {
 
 .advantages-content {
   max-width: 700px;
-  padding: 68px 0 90px;
+  padding: 69px 0 90px;
   margin: 0 auto;
 }
 
